@@ -15,4 +15,17 @@ jobs:
                - name: Second Print Step
                  run: |
                    echo "Hello! I am printing page-2"
+       file_upload_job:
+            runs-on: ubuntu-latest
+            steps:
+               - name: Create a dummy file
+                 run: |
+                    echo "I am file created by GitHub-Action" >> artifact.txt
+               - name: Upload file into GitHub
+                 uses: actions/upload-artifact@v4
+                 with:
+                     name: art-file
+                     path: artifact.txt
+               
+                   
                   
