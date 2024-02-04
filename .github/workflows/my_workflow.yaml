@@ -9,7 +9,10 @@ jobs:
        print_job-1:
             runs-on:   ubuntu-latest
             steps:
-               - name: First Print
+               - name: First Print Step
                  run: |
-                   echo "Hello! I am printing <-- from print job-1" 
+                   echo "Hello! I am printing page-1" 
+               - name: Second Print Step
+                 run: |
+                   echo "Hello! I am printing page-2"
                   
