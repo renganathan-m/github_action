@@ -1,1 +1,14 @@
 
+name: Toy Workflow
+run-name: Toy Worflow Exeuted!
+
+on:
+    - push
+
+jobs:
+       print_job-1:
+            runs-on:   ubuntu-latest
+            steps:
+               - run: |
+                   echo "Hello! I am printing <-- from print job-1"
+                  
