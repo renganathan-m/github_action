@@ -9,6 +9,7 @@ jobs:
        print_job-1:
             runs-on:   ubuntu-latest
             steps:
-               - run: |
+               - name: First Print
+                 run: |
                    echo "Hello! I am printing <-- from print job-1"
                   
